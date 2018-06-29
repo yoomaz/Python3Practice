@@ -13,6 +13,10 @@ print(name)
 
 # 2. 在Python 3里，只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。
 # 内置的 type() 函数可以用来查询变量所指的对象类型
+
+# <class 'int'>
+# <class 'float'>
+# <class 'str'>
 print('----------------------------')
 
 print(type(counter))
@@ -31,9 +35,8 @@ print(str[0:-1])  # 输出第一个到倒数第二个的所有字符
 print(str[0])  # 输出字符串第一个字符
 print(str[2:5])  # 输出从第三个开始到第五个的字符
 print(str[2:])  # 输出从第三个开始的后的所有字符
-print(str * 2)  # 输出字符串两次
 print(str + "TEST")  # 连接字符串
-print(str * 2)  # 重复
+print(str * 2)  # 输出字符串两次，重复
 
 # 4. list 列表 []
 # list 中的元素可以是不同类型的,可重复的
@@ -99,12 +102,16 @@ print(a | b)  # a和b的并集
 print(a & b)  # a和b的交集
 print(a ^ b)  # a和b中不同时存在的元素
 
+c = set()
+print(c)
+
 # 7. Dictionary 字典
 # 字典是一种映射类型，它的元素是键值对。
 # 字典的关键字必须为不可变类型，且不能重复。
 # 创建空字典使用 { }。
 print('----------------------------')
 
+# 空字典
 dict = {}
 dict['one'] = "1 - 菜鸟教程"
 dict[2] = "2 - 菜鸟工具"
